@@ -15,7 +15,7 @@ wss.on('connection', function connection(ws) {
     }, 1500);
 
     function sendByteStream() {
-        var file = './test/sample_video/' + (counter++)  + '.h264';
+        var file = './sample_video/' + (counter++)  + '.h264';
 
         if (fs.existsSync(file)) {
             var stat = fs.statSync(file);
